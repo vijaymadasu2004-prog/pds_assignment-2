@@ -1,0 +1,23 @@
+1. Random Sampling Results
+
+A random sample of 25 patients produced a mean Glucose close to the population mean, showing small samples can still estimate averages well.
+
+The maximum Glucose in the sample differed more, because extreme values vary a lot in small samples.
+
+2. BMI Percentile Results
+
+The 98th percentile of BMI from the sample was close to the population percentile but showed more variation.
+
+High percentiles (95+, 98+) are sensitive and need larger samples for stability.
+
+3. Bootstrap Findings (500 samples, n=150)
+
+Bootstrap mean of BloodPressure was almost identical to the population mean.
+
+Bootstrap standard deviation matched the population variation closely.
+
+Bootstrap 98th percentile had small fluctuations but stayed near the true percentile.
+
+4. Distribution Shape
+
+The bootstrap mean distribution looked approximately normal, supporting the Central Limit Theorem.
