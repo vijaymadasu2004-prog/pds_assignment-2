@@ -1,0 +1,45 @@
+1. Data Cleaning
+
+Removed units like kmpl, CC, bhp and kept only numeric values.
+
+Filled missing numeric values with median (avoids influence of outliers).
+
+Filled missing categorical values using mode (most common category).
+
+2. Feature Engineering
+
+Created Car_Age = 2024 - Year, giving a realistic age estimate.
+
+Added Price_per_km to understand cost relative to usage.
+
+3. Categorical Encoding
+
+Converted Fuel_Type and Transmission into numerical dummy variables for better analysis.
+
+4. dplyr-style Operations
+
+Selected useful columns (Price, Mileage, Engine, Car_Age).
+
+Filtered cars newer than 10 years.
+
+Renamed Price → Used_Car_Price.
+
+Sorted cars by price (high → low).
+
+Computed average price by fuel type.
+
+5. Key Insights
+
+Higher mileage → lower price, which matches real-world depreciation.
+
+Bigger engines and more power → higher prices.
+
+Diesel cars show slightly higher average price compared to petrol.
+
+Newer cars cost more, confirming normal market behavior.
+
+6. Visual Findings
+
+Price histogram shows most cars are in low–mid price range.
+
+Mileage vs Price scatter shows decreasing trend.
